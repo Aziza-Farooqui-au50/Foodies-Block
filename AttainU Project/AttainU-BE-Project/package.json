@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Aziza & Rizwan",
   "scripts": {
+    "dev": "npm install",
     "serve": "node server.js",
     "development": "mix",
     "watch": "npx mix",
