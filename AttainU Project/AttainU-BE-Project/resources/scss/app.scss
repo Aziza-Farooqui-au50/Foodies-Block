@@ -1,0 +1,308 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+.header-image-section{
+    margin: 20px;
+  }
+  .menu{
+    margin-top: 34%;
+  }
+//   section.login {
+//      background: #F8F8F8;
+   
+//     min-height: calc(100vh - 86px);
+//   }
+  body {
+    font-family: "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #583a01;
+    //    background: linear-gradient(90deg, #e7d43f,#71b877);
+    background: linear-gradient(90deg,rgb(245, 242, 182), #bdc3c7,rgb(245, 242, 182));
+    // #bdc3c7 → #2c3e50
+
+    
+    }
+
+
+// body {
+//     font-family: 'Lato', sans-serif;
+//     -webkit-font-smoothing: antialiased;
+//     color: $dark;
+// }
+.navItems{
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+}
+nav{
+    background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #023c75,#bdc3c7, #023c75);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #023c75,#bdc3c7,#023c75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: linear-gradient(#000000,#000000);
+    // background:
+    // linear-gradient(to right, rgb(103, 103, 180), darkorchid) border-box;
+    width: 100%;
+    border: 1px solid transparent;
+    // background: linear-gradient(90deg, #ffe100,#3ad447,#ffe100);
+    // border-image: 
+    // linear-gradient(to right, darkblue, darkorchid);
+    border-image: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+    border-image-slice: 1;
+    // padding: 25px;
+// border-radius: ;
+// border: 4px solid transparent;
+
+//   background: linear-gradient(red, purple,red);
+//     background: #C04848;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+footer{
+    // background: linear-gradient(#ffc3a0,#ED4264);
+    background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #023c75,#bdc3c7, #023c75);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #023c75,#bdc3c7,#023c75); 
+}
+
+nav li:last-child a {
+    background: $primary;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+nav li a {
+    transition: $smooth;
+    &:hover {
+        color: $primary;
+    }
+}
+// section.hero {
+//     background: $secondary;
+// }
+.size {
+    background: $secondary;
+}
+.add-to-cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+section.cart {
+    background: $secondary;
+    .amount {
+        color: $primary;
+    }
+}
+
+section.login {
+    // background: linear-gradient(90deg, rgba(7, 73, 86, 0.679) 0%, rgb(117, 15, 135) 35%,  rgb(0, 49, 68) 100%);
+    // background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+    // background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // background: $secondary;
+    min-height: calc(100vh - 86px);
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
+    }
+}
+.noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+a.link {
+    color: $primary;
+}
+
+section.status {
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+}
+.status-box {
+    padding: 60px 0 0;
+}
+.status-box ul {
+    margin-left: 84px;
+}
+.status-box ul li span {
+    position: relative;
+    padding-left: 20px;
+}
+// Dots
+.status-box ul li span:after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top:50%;
+    background: $dark;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow:0 0 1px 10px $secondary;
+}
+
+// Icons
+.status-box ul li span:before{
+    font-family: "Line Awesome Free";
+    font-size: 46px;
+    font-weight: 600;
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+}
+.status-box ul li:nth-child(1) span:before {
+    content: '\f46c';
+}
+
+.status-box ul li:nth-child(2) span:before {
+    content: '\f560';
+}
+
+.status-box ul li:nth-child(3) span:before {
+    content: '\f818';
+}
+
+.status-box ul li:nth-child(4) span:before {
+    content: '\f0d1';
+}
+
+.status-box ul li:nth-child(5) span:before {
+    content: '\f582';
+}
+.status-box ul li {
+    position: relative;
+}
+// Line
+.status-box ul li:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -6px;
+   width: 2px;
+   height: 100%;
+   background: $dark;
+   margin-top: 10px;
+}
+// Last dot
+.status-box ul li:nth-child(5) span:after {
+    box-shadow:0 20px 1px 20px $secondary;
+}
+
+// line
+.status-box ul li.step-completed:before {
+    background: $gray;
+}
+
+// dots
+.status-box ul li.step-completed span:after {
+    background: $gray;
+}
+
+// text
+.status-box ul li.step-completed span {
+    color: $gray;
+}
+
+// Current status
+.status-box ul li.current span {
+    color: $primary;
+}
+
+.status-box ul li.current span:after {
+    background: $primary;
+}
+
+.status-box ul li small {
+    float: right;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+@media(max-width:1060px) {
+    .container {
+        max-width: 90%;
+    }
+    table {
+       display: block;
+       overflow-x: auto;
+       white-space: nowrap;
+    }
+}
+
+@media(max-width: 768px) {
+    .status-box ul li span:before {
+        font-size: 34px;
+    }
+}
+
+//   new login
+
+.account-block {
+    padding: 0;
+    background-image: url('/img/veg-sandwich.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #5369f8 !important;
+}
+
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}
