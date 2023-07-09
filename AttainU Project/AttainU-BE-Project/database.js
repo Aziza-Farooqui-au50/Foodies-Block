@@ -27,7 +27,7 @@ const orderSchema = new Schema({
 }
 
 
-mongoose.connect(process.env.MONGO_CONNECTION_URL, { 
+mongoose.connect('mongodb+srv://azizafarooqui2:az_fa7777@foodiescluster.brshas3.mongodb.net/?retryWrites=true&w=majority', { 
     useNewUrlParser: true, 
     useCreateIndex:true, 
     useUnifiedTopology: true, 
